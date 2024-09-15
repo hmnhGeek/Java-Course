@@ -50,7 +50,7 @@ public class StringMethods {
         String s = String.valueOf(a);
         System.out.println(s);
 
-        // string formatting
+        // string formatting using .format
         System.out.println(String.format("We have %d books.", 10));
     }
 }
