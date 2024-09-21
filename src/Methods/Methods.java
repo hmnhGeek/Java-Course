@@ -12,6 +12,7 @@ public class Methods {
 
         System.out.println(sum(1, 5));
         System.out.println(sum(190, 35, 1));
+        System.out.println(sum(10.38f, 287.3728f));
     }
 
     public static int sumOfArray(int[] arr) {
@@ -37,5 +38,10 @@ public class Methods {
 
     private static int sum(int a, int b, int c) {
         return a + b + c;
+    }
+
+    // types can also be different or a combination of both
+    private static float sum(float a, float b) {
+        return a + b;
     }
 }
