@@ -13,6 +13,7 @@ public class Methods {
         System.out.println(sum(1, 5));
         System.out.println(sum(190, 35, 1));
         System.out.println(sum(10.38f, 287.3728f));
+        System.out.println(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
     }
 
     public static int sumOfArray(int[] arr) {
@@ -43,5 +44,20 @@ public class Methods {
     // types can also be different or a combination of both
     private static float sum(float a, float b) {
         return a + b;
+    }
+
+    // method and its parameters are collectively called SIGNATURE. A signature does not include access modifier and
+    // the return type of the method. Overloading is applicable only when the signature is different.
+
+    // passing multiple arguments: same as **kwargs and *args in Python.
+    // private static int sum(int ... a) {
+    // private static int sum(int ...a) {
+    // all mean the same.
+    private static int sum(int... a) {
+        int s = 0;
+        for(int i:a) {
+            s += i;
+        }
+        return s;
     }
 }
