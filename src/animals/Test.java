@@ -7,5 +7,7 @@ public class Test {
         dog.setName("Tommy");
         dog.setAge(5);
         System.out.printf("%s the dog is %d years old.%n", dog.getName(), dog.getAge());
+        dog.eat(); // this is inherited from the Animal class.
+        dog.sayHello(); // this is the overridden method in the Dog class.
     }
 }

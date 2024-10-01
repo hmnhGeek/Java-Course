@@ -19,4 +19,12 @@ public class Animal {
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    public void eat() {
+        System.out.println("This animal is eating food.");
+    }
+
+    public void sayHello() {
+        System.out.println("This animal is speaking.");
+    }
 }
