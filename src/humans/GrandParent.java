@@ -4,6 +4,10 @@ public class GrandParent {
     private String name;
     private Integer age;
 
+    public GrandParent() {
+        System.out.println("GrandParent() constructor called.");
+    }
+
     public String getName() {
         return name;
     }
