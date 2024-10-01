@@ -7,5 +7,6 @@ public class Test {
         // please note that only the properties are inherited and not the actual values.
         child.setName("Ram"); // this is the name of the `child` and not that of a GrandParent.
         child.setAge(5); // same here.
+        child.childMethod();
     }
 }

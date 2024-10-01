@@ -7,4 +7,8 @@ public class Parent extends GrandParent {
         // class. Note that it is useful when there is no default constructor in the parent class.
         System.out.println("Parent() constructor called.");
     }
+
+    public void parentMethod() {
+        System.out.println("Parent method called.");
+    }
 }
