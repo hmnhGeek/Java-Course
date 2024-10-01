@@ -6,6 +6,6 @@ public class Test {
         Dog dog = new Dog();
         dog.setName("Tommy");
         dog.setAge(5);
-        System.out.println(String.format("%s the dog is %d years old.", dog.getName(), dog.getAge()));
+        System.out.printf("%s the dog is %d years old.%n", dog.getName(), dog.getAge());
     }
 }
