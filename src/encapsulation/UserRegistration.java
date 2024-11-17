@@ -33,4 +33,15 @@ public class UserRegistration {
         }
         return "User registration successful!";
     }
+
+    public String higherOrderRegisterUser(String email, String password, Function<String, String> emailTransformer, Predicate<String> emailValidator, Predicate<String> passwordValidator) {
+        email = emailTransformer.apply(email);
+        if(emailValidator.negate().test(email)) {
+            return "Invalid email!";
+        }
+        if(passwordValidator.negate().test(password)) {
+            return "Invalid password!";
+        }
+        return "User registered successfully!";
+    }
 }
